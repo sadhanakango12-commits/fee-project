@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Advertisement | Premium Wear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0e7ff 0%, #fce7f3 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            color: #0f172a;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-section h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #2563eb, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-section p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            background: #f8fafc;
+            color: #0f172a;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #2563eb;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-control::placeholder {
+            color: #94a3b8;
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .file-upload-wrapper {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            border: 2px dashed #cbd5e1;
+            border-radius: 12px;
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .file-upload-wrapper:hover {
+            border-color: #2563eb;
+            background: #eff6ff;
+            color: #2563eb;
+        }
+
+        .file-upload-wrapper input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-submit:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>Create Advertisement</h1>
+            <p>Fill out the details below to list your item in the marketplace.</p>
+        </div>
+
+        <form action="home_page.html" method="get">
+            <div class="form-group">
+                <label for="title">Product Title</label>
+                <input type="text" id="title" class="form-control" placeholder="e.g. Premium Leather Jacket" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Detailed Description</label>
+                <textarea id="description" class="form-control" placeholder="Describe the condition, brand, and key features..." required></textarea>
+            </div>
+
+            <div class="price-grid">
+                <div class="form-group">
+                    <label for="salePrice">Sale Price (₹)</label>
+                    <input type="number" id="salePrice" class="form-control" placeholder="0.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="rentPrice">Rent Price (₹ / day)</label>
+                    <input type="number" id="rentPrice" class="form-control" placeholder="0.00">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Pickup Location or Hostel</label>
+                <input type="text" id="location" class="form-control" placeholder="e.g. Block C, Room 402" required>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Product Images</label>
+                <div class="file-upload-wrapper">
+                    <i class="fas fa-cloud-upload-alt fa-2x"></i>
+                    <span>Drag & drop or click to upload</span>
+                    <input type="file" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Publish Advertisement
+            </button>
+        </form>
+    </div>
+
+<script src="wishlist.js"></script>
+
+    <script src="cursor.js"></script>
+
+    <script src="search.js"></script>
+</body>
+</html>
+

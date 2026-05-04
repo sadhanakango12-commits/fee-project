@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Steel Watch</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f4f4f4;
+padding:40px;
+}
+
+/* PRODUCT CONTAINER */
+
+.product-container{
+display:flex;
+gap:60px;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+max-width:1000px;
+margin:auto;
+}
+
+/* IMAGE */
+
+.product-image img{
+width:420px;
+border-radius:10px;
+}
+
+/* PRODUCT INFO */
+
+.product-info{
+max-width:500px;
+}
+
+.product-info h1{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.subheading{
+color:#666;
+margin-bottom:15px;
+}
+
+.rating{
+color:#ffb400;
+margin-bottom:20px;
+}
+
+/* PRICE SECTION */
+
+.price-box{
+display:flex;
+gap:30px;
+margin-bottom:25px;
+}
+
+.price-card{
+border:1px solid #ddd;
+padding:15px 25px;
+border-radius:8px;
+background:#fafafa;
+}
+
+.price-card h3{
+font-size:14px;
+color:#777;
+}
+
+.price{
+font-size:22px;
+font-weight:600;
+margin-top:5px;
+}
+
+/* STRAP OPTION */
+
+.size-title{
+margin-top:15px;
+font-weight:600;
+}
+
+.sizes button{
+margin-top:10px;
+padding:8px 15px;
+border:1px solid #ccc;
+background:white;
+cursor:pointer;
+border-radius:5px;
+margin-right:8px;
+}
+
+.sizes button:hover{
+background:black;
+color:white;
+}
+
+/* SELLER DETAILS */
+
+.seller-details{
+margin-top:30px;
+padding:18px;
+background:#fafafa;
+border-left:4px solid black;
+border-radius:6px;
+}
+
+.seller-details h3{
+margin-bottom:10px;
+}
+
+.seller-details p{
+font-size:14px;
+color:#555;
+margin-bottom:6px;
+}
+
+.highlight{
+font-weight:600;
+color:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="product-container">
+
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314">
+</div>
+
+<div class="product-info">
+
+<h1>Luxury Steel Watch</h1>
+
+<p class="subheading">
+Premium stainless steel luxury watch crafted for elegance, durability, and professional style.
+</p>
+
+<div class="rating">★★★★★ (4.9)</div>
+
+<!-- PRICE -->
+
+<div class="price-box">
+
+<div class="price-card">
+<h3>Price to Buy</h3>
+<div class="price">₹8999</div>
+</div>
+
+<div class="price-card">
+<h3>Price to Rent</h3>
+<div class="price">₹399 / day</div>
+</div>
+
+</div>
+
+<!-- STRAP SIZE -->
+
+<div class="size-title">Select Strap Size</div>
+
+<div class="sizes">
+<button>Small</button>
+<button>Medium</button>
+<button>Large</button>
+</div>
+
+<!-- SELLER DETAILS -->
+
+<div class="seller-details">
+
+<h3>Seller Information</h3>
+
+<p><span class="highlight">Seller:</span> Prestige Timepieces</p>
+
+<p><span class="highlight">Availability:</span> Uniquely Available – This luxury watch is listed by a single verified seller.</p>
+
+<p><span class="highlight">Stock:</span> Only 1 piece available</p>
+
+<p><span class="highlight">Seller Rating:</span> ⭐ 4.9 Trusted Seller</p>
+
+<p><span class="highlight">Location:</span> Delhi, India</p>
+
+<p><span class="highlight">Note:</span> Luxury stainless steel watch from a premium limited edition collection.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

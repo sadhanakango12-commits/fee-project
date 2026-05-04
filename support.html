@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Support - UNISWAP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+padding:15px 60px;
+background:rgba(255,255,255,0.05);
+text-align:center;
+}
+
+.logo{
+font-size:24px;
+font-family:'Orbitron',sans-serif;
+background:linear-gradient(90deg,#00c6ff,#a100ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* CONTACT BOX */
+
+.container{
+max-width:500px;
+margin:80px auto;
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+box-shadow:0 0 20px rgba(0,198,255,0.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+/* INPUTS */
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:8px;
+background:rgba(255,255,255,0.1);
+color:white;
+outline:none;
+}
+
+textarea{
+resize:none;
+height:120px;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:25px;
+background:linear-gradient(90deg,#00c6ff,#a100ff);
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00c6ff,0 0 40px #a100ff;
+}
+
+/* EMAIL TEXT */
+
+.email{
+text-align:center;
+margin-top:15px;
+font-size:14px;
+opacity:0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">UNISWAP</div>
+</div>
+
+<div class="container">
+<h2>Contact Support</h2>
+
+<form action="mailto:your@email.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+
+<div class="email">
+Or email us directly at <b>support@uniswap.com</b>
+</div>
+
+</div>
+
+<script src="wishlist.js"></script>
+
+    <script src="cursor.js"></script>
+
+    <script src="search.js"></script>
+</body>
+</html>
+
